@@ -72,8 +72,11 @@ def toPlain(codigo):
         if codigo[i] in reverso:
             resultado += reverso[codigo[i]]
             resultado += ''
-            
-        
         else:
             resultado += ' '
     return(resultado.capitalize())
+
+def telegram(remitente, destinatario, mensaje):
+    document = Document()
+    fechahora = datatime.now()
+    hoy = fecha
